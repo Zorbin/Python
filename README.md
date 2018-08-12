@@ -1,2 +1,2 @@
 # Python
-record something about python I had learned
+分享在学习python过程中所尝试的一些玩具
