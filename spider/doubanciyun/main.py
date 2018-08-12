@@ -40,21 +40,12 @@ def inputName():
 
 	return resultList
 
-def is_number(s):
+def is_number(x):
     try:
-        float(s)
-        return True
+        x=int(x)
+        return isinstance(x,int)
     except ValueError:
-        pass
- 
-    try:
-        import unicodedata
-        unicodedata.numeric(s)
-        return True
-    except (TypeError, ValueError):
-        pass
- 
-    return False
+        return False
 
 def inputNum(len):
     choose = input()
@@ -62,7 +53,7 @@ def inputNum(len):
         print('输入有误，请重新输入')
         return inputNum(len)
 
-    return choose
+    return int(choose)
 
 def chooseMovie():
     resultList = inputName()
