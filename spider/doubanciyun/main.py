@@ -121,7 +121,7 @@ def wordCloud():
     matplotlib.rcParams['figure.figsize'] = (10.0, 5.0)
     from wordcloud import WordCloud#词云包
     
-    #bg_img = plt.imread(**.jpg)
+    #bg_img = plt.imread('**.jpg')
     bg_img = None
     
     wordcloud=WordCloud(font_path="simhei.ttf",background_color="white",max_font_size=80,mask=bg_img) #指定字体类型、字体大小和字体颜色
